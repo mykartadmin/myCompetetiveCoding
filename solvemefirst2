@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main ()
+{
+    int t,i;
+    char s[9];
+    scanf("%d",&t);
+    scanf("%s",s);
+    if(s[6]=='P'&&t!=12)
+    {printf("%d",t+12);
+for(i=0;i<6;i++)
+        printf("%c",s[i]);
+    }
+    else if(s[6]=='P'&&t==12)
+    {printf("%d",t);
+      for(i=0;i<6;i++)
+        printf("%c",s[i]);
+    }
+    else if(s[6]=='A'&&t==12)
+    {printf("00");
+for(i=0;i<6;i++)
+        printf("%c",s[i]);
+    }
+    else if(s[6]=='A'&&t!=12)
+    {
+        printf("0%d",t);
+        for(i=0;i<6;i++)
+        printf("%c",s[i]);
+    }
+    return 0;
+
+
+}
